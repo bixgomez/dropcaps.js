@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/dropcaps.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body>
+
+<div class="site-wrapper">
+  <div class="site-container">
+    <h1>Smart Dropcaps Ahoy!</h1>
+    <p>Well hello! This is a simple, but powerful, JavaScript/jQuery dropcaps solution. It uses a combination of js and css to render a drop cap at the start of the first child paragraph of a given div class (or id). The letter will span a specified number or rows precisely, and will resize according to font size and line height. If the font size increases or decreases with the viewport width, the drop cap letter will resize accordingly.</p>
+    <p>JavaScript and jQuery are used sparingly - to calculate font sizes and line heights, to create the dropcap markup, and to size it accordingly. Everything that can be done with pure CSS remains in CSS, including the ability to fine-tune the size of the font within its box. Although I am running scripts on window resize, I've got a "debouncer" in place, which delays firing by .25 second, preventing browser overload.</p>
+    <p>My ultimate goal is to write a Drupal 8 module (and a WordPress plugin) that incorporates this code into an interface that presents the site builder with a variety of choices, including the use of images from a specific directory for the initial letter.</p>
+    <p><i><b>Notes:</b></i>
+    <ul>
+      <li>I personally always test with a "W" as the first letter, because that's the widest letter.  Usually.</li>
+    </ul>
+    </p>
+    <p><i><b>Things to do ("notes to self"):</b></i>
+    <ul>
+      <li>Ensure that the height of the drop cap does not exceed the height of the paragraph</li>
+      <li>Provide an option for image-based letters kept in a specific directory</li>
+    </ul>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

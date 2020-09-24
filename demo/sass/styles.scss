@@ -1,0 +1,65 @@
+$basecolor: #4b3520;
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'PT Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-size: calc(.75em + .625vw);
+  line-height: 1.5;
+  background-color: $basecolor;
+  padding: 0;
+  margin: 0;
+}
+
+.site-wrapper {
+  background-color: #eee;
+  margin: 1.5em;
+  background-color: mix($basecolor, white, 30%);
+}
+
+.site-container {
+  padding: 1.25em;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 .5em 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.dropcap {
+  &--wrapper {
+    display: flex;
+    float: left;
+    line-height: 1;
+    overflow: hidden;
+  }
+  
+  &--inner {
+    border: 1px solid black;
+    border-radius: .025em;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: mix($basecolor, white, 50%);
+  }
+  
+  &--letter {
+    display: block;
+    line-height: 1;
+    flex: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.03em;
+    font-family: 'UnifrakturCook', 'Playfair Display SC', Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: mix($basecolor, black, 40%);
+  }
+}

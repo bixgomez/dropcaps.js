@@ -1,0 +1,6 @@
+name: dropcaps-js-demo
+recipe: lamp
+config:
+  webroot: .
+  php: '7.3'
+  via: apache
